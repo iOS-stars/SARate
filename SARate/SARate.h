@@ -51,4 +51,7 @@
 @property (nonatomic, strong) NSString *okText;
 @property (nonatomic, assign) int minAppStoreRaiting;
 
+@property (nonatomic, strong) UIImage  *starInactiveImage;
+@property (nonatomic, strong) UIImage  *starActiveImage;
+
 @end

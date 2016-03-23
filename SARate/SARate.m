@@ -63,6 +63,8 @@
     _mySARateViewController.emailErrorAlertText = self.emailErrorAlertText;
     _mySARateViewController.okText = self.okText;
     _mySARateViewController.minAppStoreRaiting = self.minAppStoreRaiting;
+    _mySARateViewController.starActiveImage = self.starActiveImage;
+    _mySARateViewController.starInactiveImage = self.starInactiveImage;
     
     [_mySARateViewController.view setFrame:[[UIScreen mainScreen] bounds]];
     
