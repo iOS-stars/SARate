@@ -81,6 +81,9 @@
     float starHeight = 30.0;
     float starY = 85.0;
     float separatorWidth = 5.0;
+
+    UIImage *activeStar = (_starActiveImage) ?: [UIImage imageNamed:@"star.png"];
+    UIImage *inActiveStar = (_starInactiveImage) ?: [UIImage imageNamed:@"star-gray.png"];
     
     _star1 = [UIButton buttonWithType:UIButtonTypeCustom];
     [_star1 setImage:[inActiveStar copy] forState:UIControlStateNormal];
@@ -90,9 +93,6 @@
     _star1.frame = CGRectMake(43, starY, starWeight, starHeight);
     [alertView addSubview:_star1];
     // 30 на 30
-    
-    UIImage *activeStar = (_starActiveImage) ?: [UIImage imageNamed:@"star.png"];
-    UIImage *inActiveStar = (_starInactiveImage) ?: [UIImage imageNamed:@"star-gray.png"];
     
     _star2 = [UIButton buttonWithType:UIButtonTypeCustom];
     [_star2 setImage:[inActiveStar copy] forState:UIControlStateNormal];
