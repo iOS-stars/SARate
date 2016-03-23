@@ -1,7 +1,7 @@
 //
 //  iRate.h
 //
-//  Version 1.11.3
+//  Version 1.11.4
 //
 //  Created by Nick Lockwood on 26/01/2011.
 //  Copyright 2011 Charcoal Design
@@ -54,6 +54,11 @@
 #define IRATE_EXTERN APPKIT_EXTERN
 #endif
 
+//! Project version number for iRate.
+FOUNDATION_EXPORT double iRateVersionNumber;
+
+//! Project version string for iRate.
+FOUNDATION_EXPORT const unsigned char iRateVersionString[];
 
 IRATE_EXTERN NSUInteger const iRateAppStoreGameGenreID;
 IRATE_EXTERN NSString *const iRateErrorDomain;
@@ -104,7 +109,7 @@ typedef NS_ENUM(NSUInteger, iRateErrorCode)
 
 @interface iRate : NSObject
 
-+ (iRate *)sharedInstance;
++ (instancetype)sharedInstance;
 
 //app store ID - this is only needed if your
 //bundle ID is not unique between iOS and Mac app stores
