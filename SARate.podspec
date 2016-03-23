@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { "Andrei Solovjev" => "andrei@solovjev.com" }
   s.platform     = :ios, "5.0"
   s.requires_arc = TRUE
-  s.source       = { :git => "https://github.com/andrei200287/SARate.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/andrei200287/SARate.git" }
   s.source_files = "SARate/*.{h,m}"
   s.exclude_files = "ViewController.h"
   s.resources = "SARate/*.png"
